@@ -1,12 +1,16 @@
 import React from 'react';
-import {Link} from 'react-router';
+
+const navStyle = {
+    backgroundColor: "#C5EBFF",
+    color: "#002A40"
+};
 
 class HomePage extends React.Component {
     render() {
         return (
-           <div className="container-fluid">
+           <div className="container-fluid" style={navStyle}>
               <div className="row">
-                  <div className="col-sm-3 col-md-2 sidebar">
+                  <div className="col-sm-3 col-md-2 sidebar navStyle" >
                             <ul className="nav nav-sidebar">
                                 <li className="active"><a href="#">Overview <span className="sr-only">(current)</span></a></li>
                                 <li><a href="#">Reports</a></li>
@@ -26,7 +30,7 @@ class HomePage extends React.Component {
                                 <li><a href="">Another nav item</a></li>
                             </ul>
                         </div>
-                  <div className="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                  <div className="col-sm-9 col-md-9 main">
                             <h1 className="page-header">Articles</h1>
 
                             <div className="row placeholders">
