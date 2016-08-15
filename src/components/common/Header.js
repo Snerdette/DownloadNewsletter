@@ -1,6 +1,5 @@
 import React, {PropTypes} from 'react';
 import { Link, IndexLink } from 'react-router';
-import LoadingDots from './LoadingDots';
 
 const Header = ({loading}) => {
     return (
@@ -22,7 +21,6 @@ const Header = ({loading}) => {
                     <li><a href="#">One more separated link</a></li>
                 </ul>
             </li>
-            {loading && <LoadingDots interval={100} dots={20}/>}
         </nav>
     );
 };

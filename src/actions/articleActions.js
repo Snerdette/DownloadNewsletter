@@ -1,5 +1,4 @@
 import * as types from './actionTypes';
-import articleApi from '../api/mockArticleApi';
 import {beginAjaxCall, ajaxCallError} from './ajaxStatusActions';
 
 export function loadArticlesSuccess(articles) {
@@ -9,12 +8,12 @@ export function loadArticlesSuccess(articles) {
 export function createArticleSuccess(article) {
     return { type: types.CREATE_ARTICLE_SUCCESS, article};
 }
-
+/*
 export function updateArticleSuccess(article) {
     return { type: types.UPDATE_ARTICLE_SUCCESS, article};
-}
+}*/
 
-export function loadArticles() {
+/*export function loadArticles() {
     return function(dispatch) {
         dispatch(beginAjaxCall());
         return articleApi.getAllArticles().then(articles => {
@@ -36,4 +35,4 @@ export function saveArticle(article) {
             throw(error);
         });
     };
-}
+}*/
