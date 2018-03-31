@@ -1,4 +1,5 @@
 import * as types from './actionTypes';
+import articleApi from '../api/articleApi';
 import {beginAjaxCall, ajaxCallError} from './ajaxStatusActions';
 
 export function loadArticlesSuccess(articles) {

@@ -11,7 +11,7 @@ class HomePage extends React.Component {
         return (
             <div className="jumbotron custom-jumbotron">
                 <h1>The Download</h1>
-                <p>Catalyst's Newletter</p>
+                <p>Catalyst's Newsletter</p>
                 <Link to="article" className="btn btn-primary btn-lg">Read Articles</Link>
             </div>
         );
